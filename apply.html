@@ -9,64 +9,233 @@
 <body>
   <header style="display:flex;justify-content:center;padding-top:18px;">
     <nav class="nav-pill" style="position:static;"> 
-      <a href="#">schedule Seating</a>
-      <a href="#">Home</a>
-      <a href="#">Now Hiring</a>
+      <a href="index.html">schedule Seating</a>
+      <a href="index.html">Home</a>
+      <a href="apply.html">Now Hiring</a>
     </nav>
   </header>
 
   <main class="app-wrap">
-    <h2 class="app-title">Fredbear’s Family Diner — Employment Application</h2>
+    <h2 class="app-title">Fredbear's Family Diner — Employment Application</h2>
+    
+    <p style="text-align:center;color:#666;margin-bottom:24px;">
+      Thank you for your interest in joining the Fredbear Family.<br>
+      To ensure the safety and satisfaction of our guests, please complete the application below.<br>
+      <strong>Please print clearly. Illegible forms may not be processed.</strong>
+    </p>
 
-    <section class="form-section">
+    <form class="form-section">
+      <!-- Applicant Information -->
+      <h3 style="margin-top:0;border-bottom:2px solid var(--purple);padding-bottom:8px;">Applicant Information</h3>
+      
       <div class="form-row">
-        <div class="field">
-          <label>Applicant Name</label>
-          <input class="underline" placeholder="Full name">
-        </div>
-        <div class="field">
-          <label>Date</label>
-          <input class="underline" placeholder="MM/DD/YYYY">
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="field">
-          <label>Position Applying For</label>
-          <input class="underline" placeholder="e.g., Kitchen, Performer, Maintenance">
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="field">
-          <label>Work Availability</label>
-          <input class="underline" placeholder="Days / Times available">
+        <div class="field" style="flex:2">
+          <label>Full Name</label>
+          <div class="underline" style="height:24px;"></div>
         </div>
       </div>
 
       <div class="form-row">
         <div class="field">
-          <label>Previous Experience</label>
-          <input class="underline" placeholder="Brief summary">
+          <label>Date of Birth</label>
+          <div class="underline" style="height:24px;"></div>
+        </div>
+        <div class="field">
+          <label>Phone Number</label>
+          <div class="underline" style="height:24px;"></div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field" style="flex:2">
+          <label>Address</label>
+          <div class="underline" style="height:24px;"></div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field" style="flex:2">
+          <label>Email (optional)</label>
+          <div class="underline" style="height:24px;"></div>
+          <small style="color:#666;display:block;margin-top:4px;">(If no email, we will contact you by phone.)</small>
+        </div>
+      </div>
+
+      <!-- Position Applying For -->
+      <h3 style="margin-top:28px;border-bottom:2px solid var(--purple);padding-bottom:8px;">Position Applying For</h3>
+      
+      <div style="margin:12px 0;">
+        <label style="display:flex;align-items:center;margin-bottom:8px;font-weight:400;">
+          <input type="checkbox"> Kitchen Staff
+        </label>
+        <label style="display:flex;align-items:center;margin-bottom:8px;font-weight:400;">
+          <input type="checkbox"> Server / Host
+        </label>
+        <label style="display:flex;align-items:center;margin-bottom:8px;font-weight:400;">
+          <input type="checkbox"> Stage Attendant (Evening Shifts Only)
+        </label>
+        <label style="display:flex;align-items:center;font-weight:400;">
+          <input type="checkbox"> Maintenance Helper
+        </label>
+      </div>
+      <small style="color:#666;display:block;margin-top:8px;">(Training provided. Certain procedures must be followed exactly.)</small>
+
+      <!-- Work Availability -->
+      <h3 style="margin-top:28px;border-bottom:2px solid var(--purple);padding-bottom:8px;">Work Availability</h3>
+      
+      <div class="form-row">
+        <div class="field" style="flex:2">
+          <label>Preferred Hours</label>
+          <div class="underline" style="height:24px;"></div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field" style="flex:2">
+          <label>Days Available</label>
+          <div class="underline" style="height:24px;"></div>
         </div>
       </div>
 
       <div class="form-row">
         <div class="field">
-          <label>Emergency Contact</label>
-          <input class="underline" placeholder="Name & Phone">
+          <label>Are you able to work nights?</label>
+          <div style="margin-top:6px;">
+            <label style="display:inline;margin-right:16px;">
+              <input type="radio" name="nights"> Yes
+            </label>
+            <label style="display:inline;">
+              <input type="radio" name="nights"> No
+            </label>
+          </div>
         </div>
       </div>
 
-      <div style="margin-top:12px">
-        <strong>Applicant Agreement</strong>
-        <ul>
-          <li>I certify that the information is true.</li>
-          <li>I consent to background checks where required.</li>
-        </ul>
+      <div class="form-row">
+        <div class="field">
+          <label>Are you comfortable working in low-light or enclosed spaces?</label>
+          <div style="margin-top:6px;">
+            <label style="display:inline;margin-right:16px;">
+              <input type="radio" name="lowlight"> Yes
+            </label>
+            <label style="display:inline;">
+              <input type="radio" name="lowlight"> Prefer not to answer
+            </label>
+          </div>
+        </div>
       </div>
 
-      <div style="margin-top:18px;display:flex;gap:18px;align-items:center">
+      <div class="form-row">
+        <div class="field">
+          <label>Can you remain calm around moving machinery?</label>
+          <div style="margin-top:6px;">
+            <label style="display:inline;margin-right:16px;">
+              <input type="radio" name="machinery"> Yes
+            </label>
+            <label style="display:inline;">
+              <input type="radio" name="machinery"> No
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Previous Experience -->
+      <h3 style="margin-top:28px;border-bottom:2px solid var(--purple);padding-bottom:8px;">Previous Experience</h3>
+      
+      <div class="form-row">
+        <div class="field" style="flex:2">
+          <label>Most Recent Employer</label>
+          <div class="underline" style="height:24px;"></div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field" style="flex:2">
+          <label>Position Held</label>
+          <div class="underline" style="height:24px;"></div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field" style="flex:2">
+          <label>Reason for Leaving</label>
+          <div class="underline" style="height:24px;"></div>
+          <small style="color:#666;display:block;margin-top:4px;">(If you left unexpectedly, please explain.)</small>
+        </div>
+      </div>
+
+      <!-- Additional Information -->
+      <h3 style="margin-top:28px;border-bottom:2px solid var(--purple);padding-bottom:8px;">Additional Information</h3>
+      
+      <div class="form-row">
+        <div class="field" style="flex:1">
+          <label>What makes you a good fit for our family-friendly environment?</label>
+          <div class="underline" style="height:60px;"></div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field" style="flex:1">
+          <label>Do you have any experience with mechanical devices, costumes, or simple repair work?</label>
+          <div class="underline" style="height:60px;"></div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label>Have you ever been inside the diner after closing hours?</label>
+          <div style="margin-top:6px;">
+            <label style="display:inline;margin-right:16px;">
+              <input type="radio" name="afterhours"> Yes
+            </label>
+            <label style="display:inline;">
+              <input type="radio" name="afterhours"> No
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field" style="flex:1">
+          <label>(If yes, please describe the circumstances.)</label>
+          <div class="underline" style="height:40px;"></div>
+        </div>
+      </div>
+
+      <!-- Emergency Contact -->
+      <h3 style="margin-top:28px;border-bottom:2px solid var(--purple);padding-bottom:8px;">Emergency Contact</h3>
+      
+      <div class="form-row">
+        <div class="field">
+          <label>Name</label>
+          <div class="underline" style="height:24px;"></div>
+        </div>
+        <div class="field">
+          <label>Phone</label>
+          <div class="underline" style="height:24px;"></div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field" style="flex:2">
+          <label>Relationship</label>
+          <div class="underline" style="height:24px;"></div>
+        </div>
+      </div>
+
+      <!-- Applicant Agreement -->
+      <h3 style="margin-top:28px;border-bottom:2px solid var(--purple);padding-bottom:8px;">Applicant Agreement</h3>
+      
+      <p style="color:#666;margin:12px 0;">By signing below, I confirm that all answers are truthful and that I understand the following:</p>
+      
+      <ul style="color:#666;margin:12px 0;">
+        <li>Some employee areas are restricted for safety reasons.</li>
+        <li>Stage characters may not be touched while they are performing.</li>
+        <li>Any unusual occurrences must be reported to management immediately.</li>
+        <li>Failure to follow procedures may result in termination.</li>
+      </ul>
+
+      <div style="margin-top:28px;display:flex;gap:40px;">
         <div style="flex:1">
           <label>Signature</label>
           <div class="underline" style="height:34px;"></div>
@@ -77,8 +246,10 @@
         </div>
       </div>
 
+      <h3 style="margin-top:40px;text-align:center;color:var(--purple);">Let's work together</h3>
+      
       <a class="submit" href="#">Send application</a>
-    </section>
+    </form>
   </main>
 </body>
 </html>
